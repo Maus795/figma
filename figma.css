@@ -183,9 +183,237 @@
 }
 
 .rightpanel {
+    display: flex;
     width: 650px;
     height: 520px;
-    border: solid 1px #9c27b0;
+    /* border: solid 1px #9c27b0; */
     margin-top: 252px;
-    margin-left: 526px;
+    margin-left: 274px;
+    flex-direction: column;
+
 }
+
+.toppanel {
+    display: flex;
+    width: 650px;
+    height: 56px;
+    border-radius: 10px;
+    background: #54bab9;
+    /* position: relative; */
+    box-shadow: 0px 5px #38938a;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: unset;
+
+}
+
+.task2 {
+    width: 70px;
+    height: 27px;
+    border: none;
+    color: #1d8a8a;
+    font-family: "Open Sans, Sans-Serif ";
+    font-size: 18px;
+    background: #54bab9;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: unset;
+    line-height: 27px;
+}
+
+.new2 {
+    width: 200px;
+    height: 31px;
+    border-radius: 10px;
+    background-color: #38938a;
+    font-family: "Open Sans,Sans-Serif";
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: unset;
+}
+
+.clear2 {
+    width: 164px;
+    height: 27px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Open Sans,Sans-Serif";
+    color: #1d8a8a;
+    background: #54bab9;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: unset;
+
+
+}
+
+.bottompanel {
+    display: flex;
+    width: 650px;
+    height: 449px;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans,Sans-Serif";
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: unset;
+    padding-top: 10px;
+
+
+
+
+
+}
+
+.chek1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 650px;
+    height: 80px;
+    background: #54bab9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chek2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 650px;
+    height: 80px;
+    background: #54bab9;
+    border-top: 1px solid #ffffff;
+}
+
+.chek3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 650px;
+    height: 80px;
+    background: #54bab9;
+    border-top: 1px solid #ffffff;
+}
+
+.chek4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 650px;
+    height: 80px;
+    background: #54bab9;
+    border-top: 1px solid #ffffff;
+}
+
+.chek5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 650px;
+    height: 80px;
+    background: #54bab9;
+    border-top: 1px solid #ffffff;
+}
+
+.bottom {
+    display: flex;
+    width: 650px;
+    height: 50px;
+    background: #54bab9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 5px #38938a;
+    border-top: 1px solid #ffffff;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.activ {
+    display: flex;
+    width: 66px;
+    height: 27px;
+    cursor: pointer;
+    border: none;
+    background: #54bab9;
+    color: #44a0a0;
+    font-weight: 800;
+    font-size: 20px;
+    padding-right: 80px;
+
+
+}
+
+.all {
+
+    display: flex;
+    width: 28px;
+    height: 27px;
+    cursor: pointer;
+    background: #54bab9;
+    color: #f6f6f6;
+    font-weight: 800;
+    font-size: 20px;
+    border: none;
+
+}
+
+.coml {
+    display: flex;
+    width: 112px;
+    height: 27px;
+    border: none;
+    cursor: pointer;
+    background: #54bab9;
+    color: #44a0a0;
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+
+}
+
+.custom-checkbox {
+    border-radius: 100%;
+    background: #4caf50;
+}
+
+/* 
+input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 30px;
+    width: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked+.custom-checkbox {
+    background-color: #1b10b1;
+    border-color: #9c27b0;
+} */
