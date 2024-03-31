@@ -1,0 +1,58 @@
+body {
+
+
+
+    margin: 100px;
+
+}
+
+.n {
+    display: flex;
+    position: relative;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* span {
+    display: inline-block;
+    position: relative;
+    background: url(/figma/img2/chek.png);
+} */
+
+input[type="checkbox"]+span {
+    display: block;
+
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(/figma/img2/chek.png);
+    /* background-image: url(/figma/img2/chek.png); */
+
+
+}
+
+label {
+    /* display: flex;
+    align-items: center;
+    
+    width: 30px;
+    height: 30px; */
+    /* background: url(/figma/img2/chek.png); */
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+input[type="checkbox"]:checked+span {
+    background: url(/figma/img2/chek2.png);
+    position: absolute;
+}
