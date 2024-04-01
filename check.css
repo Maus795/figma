@@ -50,6 +50,8 @@ label {
     cursor: pointer;
     position: relative;
     display: block;
+    display: flex;
+
 }
 
 input[type="checkbox"]:checked+span {

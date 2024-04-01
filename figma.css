@@ -1,7 +1,9 @@
 .fon {
     display: flex;
-    width: 1440px;
-    height: 1024px;
+    width: 140vh;
+    /* width: 1440px; */
+    /* height: 1024px; */
+    height: 95vh;
     background: #f7ecde;
 
 
@@ -10,19 +12,24 @@
 
 .text {
     position: absolute;
-    left: 591px;
+    left: 57vh;
+    /* left: 591px; */
     color: #e9c597;
-    margin-top: 80px;
-    width: 258px;
-    height: 58px;
+    margin-top: 8vh;
+    width: 25vh;
+    /* margin-top: 80px; */
+    /* width: 258px; */
+    /* height: 58px; */
     text-align: center;
-    font-size: 28px;
+    font-size: 2.7vh;
+    /* font-size: 28px; */
     font-weight: 800;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: unset;
     font-variation-settings: "wdth" 1000;
-    line-height: 28.8px;
+    line-height: 2.5vh;
+    /* line-height: 28.8px; */
 }
 
 
@@ -49,25 +56,27 @@
 
 .categories {
     display: flex;
-    width: 250px;
-    height: 514px;
+    width: 24vh;
+    /* height: 514px; */
+    height: 48.5vh;
     background: #54bab9;
     border-radius: 10px;
     position: relative;
-    top: 252px;
-    left: 264px;
+    top: 24vh;
+    left: 25vh;
     box-shadow: #38938a 0px 5px;
 
 }
 
 .categories2 {
     display: flex;
-    width: 250px;
-    height: 27px;
+    width: 24vh;
+    /* height: 27px; */
     color: #e4e4e4;
-    font-size: 27px;
+    /* font-size: 27px; */
+    font-size: 2.5vh;
     position: relative;
-    padding-top: 25px;
+    padding-top: 2vh;
     /* display: inline-block; */
     text-align: center;
     justify-content: center;
@@ -79,7 +88,7 @@
     height: 1px;
     content: "";
     flex: 1;
-    margin-top: 15px;
+    margin-top: 1.5vh;
     width: 10px;
 
 }
@@ -96,24 +105,29 @@
 
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 2vh;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 53px;
-    gap: 10px;
+    /* margin-top: 54px; */
+    margin-top: 6vh;
+    gap: 1vh;
+    position: absolute;
+    margin-left: 3vh;
 
 
 
 }
 
 .A {
-    position: static;
+    /* position: static; */
     border-radius: 10px;
     background: #4caf50;
-    width: 200px;
-    height: 30px;
+    width: 19vh;
+    height: 2.5vh;
+    /* width: 200px; */
+    /* height: 30px; */
     text-align: center;
     padding-top: 5px;
 
@@ -121,8 +135,8 @@
 
 .B {
     position: static;
-    width: 200px;
-    height: 30px;
+    width: 19vh;
+    height: 2.5vh;
     border-radius: 10px;
     text-align: center;
     background-color: #ff5252;
@@ -133,8 +147,8 @@
     position: static;
     border-radius: 10px;
     text-align: center;
-    width: 200px;
-    height: 30px;
+    width: 19vh;
+    height: 2.5vh;
     background: #ffc107;
     padding-top: 5px;
 
@@ -144,8 +158,8 @@
     position: static;
     border-radius: 10px;
     text-align: center;
-    width: 200px;
-    height: 30px;
+    width: 19vh;
+    height: 2.5vh;
     background: #9c27b0;
     padding-top: 5px;
 }
@@ -154,8 +168,8 @@
 
     position: static;
     border-radius: 10px;
-    width: 200px;
-    height: 30px;
+    width: 19vh;
+    height: 2.5vh;
     text-align: center;
     background: #25a7b8;
     padding-top: 5px;
@@ -164,18 +178,18 @@
 .add1 button {
 
     position: absolute;
-    width: 168px;
-    height: 31px;
+    width: 19vh;
+    height: 2.5vh;
     border-radius: 10px;
     background: #38938a;
     font-family: "Open Sans,Sans-Serif ";
     font-weight: 800;
-    font-size: 20px;
+    font-size: 2vh;
     color: #f6f6f6;
     align-self: center;
     cursor: pointer;
     border: none;
-    top: 450px;
+    top: 41vh;
     right: 0;
     bottom: 0;
     left: 0;
@@ -260,8 +274,10 @@
 
 .bottompanel {
     display: flex;
-    width: 650px;
-    height: 449px;
+    width: 669px;
+
+    max-height: 400px;
+
     flex-direction: column;
     align-items: center;
     font-family: "Open Sans,Sans-Serif";
@@ -271,12 +287,27 @@
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: unset;
+    margin-top: -10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+
+
+
+
+
+
+}
+
+.pading {
+
     padding-top: 10px;
-
-
-
-
-
+    /* border: 2px solid black; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 66px;
+    background: #54bab9;
+    position: absolute;
 }
 
 .chek1 {
@@ -284,10 +315,14 @@
     align-items: center;
     justify-content: space-around;
     width: 650px;
-    height: 80px;
-    background: #54bab9;
+    min-height: 80px;
+    background: #54bab800;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    flex: 1;
+
+
+
 }
 
 .chek2 {
@@ -295,9 +330,11 @@
     align-items: center;
     justify-content: space-around;
     width: 650px;
-    height: 80px;
-    background: #54bab9;
+    min-height: 80px;
+    background: #54bab800;
     border-top: 1px solid #ffffff;
+    flex: 1;
+
 }
 
 .chek3 {
@@ -305,9 +342,10 @@
     align-items: center;
     justify-content: space-around;
     width: 650px;
-    height: 80px;
-    background: #54bab9;
+    min-height: 80px;
+    background: #54bab800;
     border-top: 1px solid #ffffff;
+    flex: 1;
 }
 
 .chek4 {
@@ -315,9 +353,10 @@
     align-items: center;
     justify-content: space-around;
     width: 650px;
-    height: 80px;
-    background: #54bab9;
+    min-height: 80px;
+    background: #54bab800;
     border-top: 1px solid #ffffff;
+    flex: 1;
 }
 
 .chek5 {
@@ -325,9 +364,10 @@
     align-items: center;
     justify-content: space-around;
     width: 650px;
-    height: 80px;
-    background: #54bab9;
+    min-height: 80px;
+    background: #54bab800;
     border-top: 1px solid #ffffff;
+    flex: 1;
 }
 
 .bottom {
@@ -341,6 +381,7 @@
     border-top: 1px solid #ffffff;
     align-items: center;
     justify-content: center;
+    position: absolute;
 
 
 
@@ -391,29 +432,33 @@
 
 input[type="checkbox"] {
     display: none;
+    cursor: pointer;
+
 
 }
+
+
 
 i {
     display: inline-block;
     width: 30px;
     height: 30px;
-    border: 1px solid black;
+
     position: relative;
+    background: #4caf50;
+
 }
 
 input[type="checkbox"]+i {
     border-radius: 50%;
+    cursor: pointer;
+
 }
 
 i:before {
     content: "";
     position: absolute;
-    background: #9c27b0;
-    top: 3px;
-    bottom: 2px;
-    left: 3px;
-    right: 2px;
+    background: url(/figma/img2/vector.png);
     border-radius: 50%;
     transform: scale(0);
     transition: 0.4s;
@@ -421,28 +466,13 @@ i:before {
 }
 
 input:checked+i:before {
+    display: flex;
+
     transform: scale(1);
+    background: url(/figma/img2/vector.png);
+    width: 15px;
+    height: 10px;
+    top: 8px;
+
+    left: 8px;
 }
-
-/* .custom-checkbox {
-    border-radius: 100%;
-    background: #4caf50;
-} */
-
-/* 
-input[type="checkbox"] {
-    display: none;
-}
-
-.custom-checkbox {
-    display: inline-block;
-    width: 30px;
-    width: 30px;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-input[type="checkbox"]:checked+.custom-checkbox {
-    background-color: #1b10b1;
-    border-color: #9c27b0;
-} */
