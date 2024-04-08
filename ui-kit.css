@@ -1,0 +1,45 @@
+.text-title {
+    color: #F6F6F6;
+    font-family: "Open Sans";
+    line-height: 0.9;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.text-description {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    line-height: 0.9;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.surface {
+    background-color: #54BAB9;
+    box-shadow: 0px 5px #38938a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.button-surface {
+    background-color: #38938A;
+    border-radius: 10px;
+    padding: 6px 30px;   
+    color: #F6F6F6;
+    font-family: "Open Sans";
+    line-height: 0.9;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.button-text {
+    color: #1D8A8A;
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-weight: bold;
+    line-height: 0.9;
+    font-size: 20px;
+}
+
