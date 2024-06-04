@@ -2333,15 +2333,187 @@
 // let res = retArr(num1, num2);
 // console.log(res);
 
-function latLett() {
-    let arrLett = [];
-    let letteral = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    let lettLength = letteral.length;
-    for (let i = 0; i < 10; i++) {
-        arrLett.push(letteral.at(Math.floor(Math.random() * lettLength)))
-    } return arrLett;
+//10.5.5
+
+// function latLett() {
+//     let arrLett = [];
+//     let letteral = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+//     let lettLength = letteral.length;
+//     for (let i = 0; i < 10; i++) {
+//         arrLett.push(letteral.at(Math.floor(Math.random() * lettLength)))
+//     } return arrLett;
+// }
+// let arr = [];
+// let res = latLett();
+// arr = res;
+// console.log(arr);
+
+// 10.5.6
+
+// function fib(n) {
+//     return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+// }
+// console.log(fib(10));
+
+
+
+
+
+// tree = {
+//     name: 'root',
+//     value: 0,
+//     children: [
+//         {
+//             name: 'branch_1',
+//             value: 100,
+//             children: [
+//                 {
+//                     name: 'leaf_1',
+//                     value: -500,
+//                     children: [],
+//                 },
+//                 {
+//                     name: 'leaf_2',
+//                     value: 500,
+//                     children: [],
+//                 }
+//             ]
+//         },
+//         {
+//             name: 'branch_1',
+//             value: 100,
+//             children: [
+//                 {
+//                     name: 'leaf_1',
+//                     value: -500,
+//                     children: [],
+//                 },
+//                 {
+//                     name: 'leaf_2',
+//                     value: 500,
+//                     children: [],
+//                 }
+//             ]
+//         },
+//         {
+//             name: 'branch_2',
+//             value: 100,
+//             children: [
+//                 {
+//                     name: 'leaf_1',
+//                     value: -50,
+//                     children: [],
+//                 },
+//                 {
+//                     name: 'leaf_2',
+//                     value: 200,
+//                     children: [],
+//                 }
+//             ]
+//         }
+//     ]
+// }
+
+// function getSum(node, name, sum = 0) {
+//     if (node.name === name) {
+//         return node.value
+//     }
+
+//     if (node.children && node.children.length > 0) {
+//         let res = 0
+//         for (let i = 0; i < node.children.length; i++) {
+//             item = node.children[i]
+//             res += getSum(item, name, sum)
+//         }
+
+//         return res == 0 ? res : sum + res;
+//     }
+
+//     return 0
+// }
+
+
+// getSum(tree, 'leaf_2')
+
+
+// function sum(n, acc = 0) {
+//     if (n > 0) {
+//         return sum(n - 1, acc + n)
+//     }
+
+//     return acc
+// }
+
+
+// function sumWhile(n) {
+//     acc = 0
+//     while (n > 0) {
+//         acc += n
+//         n = n - 1
+//     }
+
+//     return acc
+// }
+
+
+// function main2() {
+// 5 + 4 + 3 + 2 + 1 = 15
+
+// [0] sum(5, 0) -- вызвал сам
+// [1] sum(4, 5) -- вызвылась из 0
+// [2] sum(3, 5 + 4 = 9)
+// [3] sum(2, 9 + 3 = 12)
+// [4] sum(1, 12 + 2 = 14)
+// [5] sum(0, 14 + 1 = 15)
+
+//     sum(5)
+// }
+
+// CALL STACK
+// main2 <--
+//  sum(5, 0) <--
+//      sum(4, 0 + 5 = 5) <--
+//          sum(3, 5 + 4 = 9) <--
+//              sum(2, 9 + 3 = 12) <--
+//                  sum(1, 12 + 2 = 14) <--
+//                      sum(0, 14 + 1 = 15) <--
+//                      sum(0) -->
+//                  sum(1) -->
+//              sum(2) -->
+//          sum(3) -->
+//      sum(4) -->
+//  sum(5) -->
+// main2
+
+//  sum(5, 0) -->
+//      sum(5, 0) -->
+//          sum(5, 0) -->
+//              sum(5, 0) -->
+//                  sum(5, 0) -->
+//                      sum(5, 0) -->
+//                          sum(5, 0) -->
+//                              sum(5, 0) -->
+//                                  sum(5, 0) -->
+//                                      sum(5, 0) -->
+//                                          sum(5, 0) -->
+//                                              sum(5, 0) -->
+//                                                  sum(5, 0) -->
+//                                                      sum(5, 0) -->
+//                                                          sum(5, 0) -->
+//                                                              sum(5, 0) ||| Maximum call stack size exceeded at sum (REPL24:1:13)
+
+
+//10.6.1
+
+
+function chekDate(date) {
+    let ms = Date.parse(date);
+    // if (isNaN(ms)) { console.log(false) } else {
+    //     console.log(
+    //         true)
+    // }
+    let res = isNaN(ms) ? false : true;
+    console.log(res);
 }
-let arr = [];
-let res = latLett();
-arr = res;
-console.log(arr);
+let date = '2200,11,3';
+chekDate(date);
