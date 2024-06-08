@@ -2506,14 +2506,305 @@
 //10.6.1
 
 
-function chekDate(date) {
-    let ms = Date.parse(date);
-    // if (isNaN(ms)) { console.log(false) } else {
-    //     console.log(
-    //         true)
-    // }
-    let res = isNaN(ms) ? false : true;
-    console.log(res);
+// function chekDate(date) {
+//     let ms = Date.parse(date);
+//     // if (isNaN(ms)) { console.log(false) } else {
+//     //     console.log(
+//     //         true)
+//     // }
+//     let res = isNaN(ms) ? false : true;
+//     console.log(res);
+// }
+// let date = '2200,11,3';
+// chekDate(date);
+
+//10/6/2
+
+// function latSrt(leng) {
+//     let letteral = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+//     let lengthLett = letteral.length;
+//     let strLett = "";
+//     for (let i = 0; i <= leng; i++) {
+//         let str = letteral.at(Math.floor(Math.random() * lengthLett));
+//         strLett += str;
+//     } return strLett;
+// }
+// let leng = 10;
+// let res = latSrt(leng);
+// console.log(res);
+
+//10.6.3
+
+// function oneUpper(str) {
+//     let leet = '';
+//     leet += str[0].toUpperCase() + ' ';
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === ' ') { leet += str[i + 1].toUpperCase() + ' ' }
+//     } return leet;
+// }
+// let str = 'qwe qwe qwe ghj dfg';
+// let res = oneUpper(str);
+// console.log(res);
+
+//10.6.4
+
+// function arrDiv(arr) {
+
+//     let arrRes = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         let tempArr = [];
+//         for (let j = 0; j <= arr[i]; j++) {
+//             if (arr[i] % j === 0) {
+//                 tempArr.push(j);
+//             }
+//         } arrRes.push(tempArr)
+//     }
+//     return arrRes;
+// }
+// let arr = [20, 44, 1, 66, 35];
+// let res = arrDiv(arr);
+// console.log(res);
+
+//10.6.4
+
+// function second(sec) {
+//     let day = sec / 60 / 60 / 24;
+//     let d = Math.floor(day);
+//     let rameinsDay = sec - (60 * 60 * 24 * d);
+
+//     let hours = rameinsDay / 60 / 60;
+//     let h = Math.floor(hours);
+//     let rameinsHours = rameinsDay - (60 * 60 * h);
+
+//     let min = rameinsHours / 60;
+//     let m = Math.floor(min);
+//     let rameinsMin = rameinsHours - (60 * m);
+
+//     let s = rameinsMin;
+//     return {
+//         d: d,
+//         h: h,
+//         m: m,
+//         s: s,
+
+
+//     }
+// }
+
+// let sec = 7000030;
+// let res = second(sec);
+// console.log(res);
+
+
+//10.7.1
+
+// function sorStr(str) {
+//     let resultSort = str.split(' ').sort().join(' ');
+//     return resultSort;
+// }
+// let str = 'kdra gpt qwe arz';
+// let res = sorStr(str);
+// console.log(res);
+
+
+//10.7.2
+
+// function commonArr(arr1, arr2) {
+//     let arrResult = [];
+//     let res = [];
+//     if (arr1.length >= arr2.length) {
+//         for (let i = 0; i < arr1.length; i++) {
+//             arrResult.push(arr2.filter(item => item === arr1[i]))
+//         }
+//     } else {
+//         for (let j = 0; j < arr2.length; j++) {
+//             arrResult.push(arr1.filter(item => item === arr2[j]))
+//         }
+//     }
+//     for (let q = 0; q < arrResult.length; q++) {
+//         if (arrResult[q].length !== 0) {
+//             res.push(arrResult[q].join(''))
+//         }
+//     }
+//     console.log(arrResult);
+//     return res;
+// }
+// let arr1 = ['12', 'ds', '1jl', '54', 'qwe'];
+// let arr2 = ['323', 'qw', '7t', '1jl', 'fgh', 'hg', 'qwe'];
+// let res = commonArr(arr1, arr2);
+// console.log(res);
+
+//10.7.3
+
+// function rundomNum() {
+//     let min = 0;
+//     let max = 2;
+//     let num = Math.floor(Math.random() * (max - min + 1) + min);
+//     return num;
+// }
+
+// console.log(rundomNum())
+
+
+// function killDoublicate(fn) {
+//     let cache
+//     debugger
+
+//     return function decorated(...args) {
+//         debugger
+
+//         while (true) {
+//             let v = fn(...args);
+//             debugger
+//             if (cache != v) {
+//                 return cache = v
+//             }
+//         }
+//     }
+// }
+
+// function notEqualsArgs(fn) {
+//     debugger
+//     return function notEqualsArgsGuard(...args) {
+//         debugger
+//         if (args.length > 0) {
+//             let uniqueArgs = new Set(args)
+//             debugger
+//             if (uniqueArgs.size !== args.length) {
+//                 debugger
+//                 throw Error(`Arguments can't be equals => ${args}`)
+//             }
+//         }
+
+//         debugger
+//         return fn(...args)
+//     }
+// }
+
+// function getRandom(min = 0, max = 10) {
+//     debugger
+//     return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+
+
+// getRandom = notEqualsArgs(killDoublicate(getRandom))
+
+
+// примеры вызовы
+// getRandom() // без ошибки
+// getRandom(10, 20) // без ошибки
+// getRandom(10, 10) // с ошибкой
+
+
+//10.7.4
+
+// function callElem(arr, elem) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === elem) {
+//             return arr[i + 1] || arr[0];
+//         }
+//     }
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// let res;
+// for (let temp of arr) {
+//     res = callElem(arr, 2);
+
+// }
+// console.log(res);
+
+
+//10.8.1
+
+// function randomElm(arr) {
+//     let lengthArr = arr.length;
+//     let result = Math.floor(Math.random() * ((lengthArr - 0) + 0));
+//     return arr.at(result);
+// }
+// let arr = ['1', 'gf', '7g', 'qwe'];
+// let res = randomElm(arr);
+// console.log(res);
+
+//10.8.2
+
+// function randomElm(arr) {
+//     let arrElm = [];
+//     let N = arr.length;
+//     let randomLength = Math.floor(Math.random() * (N - 0) + 0);
+//     for (let i = 0; i <= randomLength; i++) {
+//         let elementNumber = Math.floor(Math.random() * (N - 0) + 0);
+//         arrElm.push(arr.at(elementNumber));
+//     } return arrElm;
+// }
+// let arr = ['1', 'gf', '7g', 'qwe'];
+// let res = randomElm(arr);
+// console.log(res);
+
+
+//10.8.3
+
+
+// function delRepetitions(fn) {
+//     let cache;
+//     return function decorated(...args) {
+//         while (true) {
+//             let value = fn(...args);
+//             if (cache != value) {
+//                 return cache = value;
+
+//             }
+
+//         }
+//     }
+// }
+// function randomElm(arr) {
+//     let lengthArr = arr.length;
+//     let res = Math.floor(Math.random() * (lengthArr - 0) + 0);
+//     return arr.at(res);
+
+// }
+// randomElm = delRepetitions(randomElm);
+// let arr = ['1', 'gf', '7g', 'qwe'];
+// let res = randomElm(arr);
+// let arr2 = [];
+// for (let i = 0; i <= 100; i++) {
+//     arr2.push(randomElm(arr));
+// }
+// console.log(arr2);
+
+
+// function killDoublicate(fn) {
+//     let cache
+//     return function decorated(...args) {
+//         while (true) {
+//             let v = fn(...args);
+//             if (cache != v) {
+//                 return cache = v
+//             }
+//         }
+//     }
+// }
+// function getRandom(min = 0, max = 10) {
+
+//     return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+
+// getRandom = killDoublicate(getRandom)
+// let arr = [];
+// for (let i = 0; i <= 1000; i++) {
+//     arr.push(getRandom(0, 1))
+// }
+// console.log(arr)
+
+
+//10.8.4
+
+
+let arr = [];
+for (let i = 0; i <= 1000; i++) {
+    if (i % 2 !== 0 && i % 3 !== 0 && i % i === 0) { arr.push(i) }
 }
-let date = '2200,11,3';
-chekDate(date);
+
+console.log(arr);
+
