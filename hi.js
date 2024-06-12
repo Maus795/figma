@@ -2800,11 +2800,210 @@
 
 //10.8.4
 
+// function randomNum(num, lengArr) {
+//     let arr = [];
+//     for (let i = 0; i <= lengArr; i++) {
+//         let res = Math.floor(Math.random() * (num - 0 + 1) + 0);
+//         arr.push(res);
+//     }
+//     console.log(arr);
+//     let arr2 = Array.from(new Set(arr));
+//     // let arr2 = [];
+//     // for (let i = 0; i <= arr.length; i++) {
 
-let arr = [];
-for (let i = 0; i <= 1000; i++) {
-    if (i % 2 !== 0 && i % 3 !== 0 && i % i === 0) { arr.push(i) }
+//     //     let retArr = arr.filter(elem,index => {
+// // return arr2.indexOf(elem)!==index}
+//     //     arr2.push(retArr)
+//     return arr2;
+
+// }
+
+
+// let num = 9;
+// let lengArr = 5;
+// let res = randomNum(num, lengArr);
+
+// console.log(res);
+
+//4.9.4
+
+// function arrDiv(arr) {
+
+//     function sortArr(a, b) {
+//         if (a > b) return 1;
+//         if (a == b) return 0;
+//         if (a < b) return -1;
+//     } arr.sort(sortArr)
+//     console.log(arr)
+//     let arr2 = [];
+//     let arr3 = [];
+//     let oneElem = arr.at(0);
+//     for (let i = 1; i <= oneElem; i++) {
+//         if (oneElem % i == 0) {
+//             arr2.push(i);
+//         }
+//     }
+//     console.log(arr2)
+
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j <= arr2.length; j++) {
+//             if (arr[i] % arr2[j] !== 0) {
+//                 arr2.splice(j, 1);
+
+//             }
+//         }
+//     }
+//     return arr2;
+// }
+
+
+// // return res;
+
+// let arr = [105, 27, 15, 45, 12];
+// let res = arrDiv(arr);
+// console.log(res);
+
+
+//10.9.5
+
+
+// function arrayMaxNum(arr) {
+//     function sortArr(a, b) {
+//         if (a > b) return 1;
+//         if (a == b) return 0;
+//         if (a < b) return -1;
+//     }
+//     let arr2 = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i].sort(sortArr)
+//         arr2.push([arr[i].at(-1)])
+//     }
+//     return arr2
+// }
+// let arr = [[21, 3, 54], [56, 34, 9], [90, 4, 100]];
+// let res = arrayMaxNum(arr);
+// console.log(res);
+
+// 10.10.1
+
+
+// function chek(lett) {
+//     if (/^[a-zA-Z]/.test(lett) === true) { return 'это латиница' } else { return 'это кирилица' }
+// }
+// let letteral = 'п';
+// let res = chek(letteral);
+// console.log(res)
+
+//10.10.2
+
+// function randomStatus(arr) {
+//     let arr2 = [];
+//     let max = arr.length;
+//     let newArr = arr;
+//     for (let i = 0; i < arr.length; i++) {
+//         let pos = (Math.floor(Math.random() * (max - 0) + 0))
+//         arr2.push(arr.at(pos))
+//     }
+//     let temp = Array.from(new Set(arr2));
+//     if (arr2.length !== temp.length) {
+//         for (let j = 0; j < newArr.length; j++) {
+//             for (let i = 0; i < temp.length; i++) {
+//                 if (newArr[j] === temp[i]) {
+//                     newArr.splice(j, 1)
+//                 }
+//             }
+//         }
+
+//     }
+//     for (let i = 0; i < newArr.length; i++) {
+//         temp.push(newArr[i])
+//     }
+//     let resul = Array.from(new Set(temp));
+//     return resul;
+// }
+// let arr = ['gf', 'reds', 'erythd', '3rdfs'];
+// let res = randomStatus(arr);
+// console.log(res);
+
+
+//10.10.3
+
+function objWords(str) {
+    let obj = {};
+    let arrLett = [];
+    let value = [];
+    let key;
+    // let arrWord = [];
+    let arr = str.split(' ');
+    for (let i = 0; i < arr.length; i++) {
+
+        key = arr[i].at(0);
+        obj[key] = value.push(arr[i].at(0))
+
+
+
+
+    } console.log(obj)
+
+
+    //     if (key === arr[i].at(0)) {
+    //         value.push(arr[i])
+
+    //     }
+
+    // obj[key] = value;
+    // return obj
+    //     arrLett.push(arr[i].at(0))
+    // } console.log(arrLett)
+    // console.log(arr);
+
+    // let meaning = Array.from(new Set(arrLett));
+
+    // console.log(meaning);
+    // for (let data of meaning) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (data === arr[i].at(0)) {
+    //             let key = data;
+    //             let value = arr[i];
+    //             obj[key] = value;
+
+
+    //         }
+    //     }
+    // } return obj;
+
+
 }
+let str = 'Карл у Клары украл рекламу, а Клара у Карла украла бюджет';
+let res = objWords(str);
+console.log(res);
 
-console.log(arr);
+// let obj = {};
+// let keys = ['a', 'b', 'c', 'd', 'e'];
+// let values = [1, 2, 3, 4, 5];
+// for (let i = 0; i <= 4; i++) {
+//     let key = keys[i];
+//     let value = values[i];
 
+//     obj[key] = value;
+// }
+
+// console.log(obj);
+
+// 10.10.5
+
+
+// function arrDiv(num) {
+//     let arr = [];
+//     for (let i = 1; i <= num; i++) {
+//         if (num % i === 0) { arr.push(i) }
+//     }
+//     for (let i = 0; i < arr.length; i++){
+//         for (let j = 2; j < arr[i]; j++){
+//             if (arr[i] % i === 0) return false;
+//         } return num !== 1;
+//     }
+// }
+// let num = 18;
+// let res = arrDiv(num);
+// console.log(res);
