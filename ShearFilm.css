@@ -1,0 +1,56 @@
+@import url("reset.css");
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.fon {
+    display: flex;
+    background-color: #EEEEEE;
+    flex-direction: column;
+    height: 100vh;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 36px;
+    font-size: 36px;
+
+
+}
+
+
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    height: 7vh;
+}
+
+input[type=search] {
+    padding: 15px;
+}
+
+
+
+.windOut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    /* border: 2px solid #b32222; */
+}

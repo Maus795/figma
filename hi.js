@@ -2928,55 +2928,55 @@
 
 //10.10.3
 
-function objWords(str) {
-    let obj = {};
-    let arrLett = [];
-    let value = [];
-    let key;
-    // let arrWord = [];
-    let arr = str.split(' ');
-    for (let i = 0; i < arr.length; i++) {
+// function objWords(str) {
+//     let obj = {};
+//     let arrLett = [];
+//     let value = [];
+//     let key;
+//     // let arrWord = [];
+//     let arr = str.split(' ');
+//     for (let i = 0; i < arr.length; i++) {
 
-        key = arr[i].at(0);
-        obj[key] = value.push(arr[i].at(0))
-
-
+//         key = arr[i].at(0);
+//         obj[key] = value.push(arr[i])
 
 
-    } console.log(obj)
 
 
-    //     if (key === arr[i].at(0)) {
-    //         value.push(arr[i])
-
-    //     }
-
-    // obj[key] = value;
-    // return obj
-    //     arrLett.push(arr[i].at(0))
-    // } console.log(arrLett)
-    // console.log(arr);
-
-    // let meaning = Array.from(new Set(arrLett));
-
-    // console.log(meaning);
-    // for (let data of meaning) {
-    //     for (let i = 0; i < arr.length; i++) {
-    //         if (data === arr[i].at(0)) {
-    //             let key = data;
-    //             let value = arr[i];
-    //             obj[key] = value;
+//     } console.log(obj)
 
 
-    //         }
-    //     }
-    // } return obj;
+//     if (key === arr[i].at(0)) {
+//         value.push(arr[i])
+
+//     }
+
+// obj[key] = value;
+// return obj
+//     arrLett.push(arr[i].at(0))
+// } console.log(arrLett)
+// console.log(arr);
+
+// let meaning = Array.from(new Set(arrLett));
+
+// console.log(meaning);
+// for (let data of meaning) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (data === arr[i].at(0)) {
+//             let key = data;
+//             let value = arr[i];
+//             obj[key] = value;
 
 
-}
-let str = 'Карл у Клары украл рекламу, а Клара у Карла украла бюджет';
-let res = objWords(str);
-console.log(res);
+//         }
+//     }
+// } return obj;
+
+
+// }
+// let str = 'Карл у Клары украл рекламу, а Клара у Карла украла бюджет';
+// let res = objWords(str);
+// console.log(res);
 
 // let obj = {};
 // let keys = ['a', 'b', 'c', 'd', 'e'];
@@ -3007,3 +3007,36 @@ console.log(res);
 // let num = 18;
 // let res = arrDiv(num);
 // console.log(res);
+
+//10.10.4
+
+function numRegistration(num) {
+    let aDozen = ['ноль', "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"];
+    let firstTen = ['десять', "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"]
+    let theOthers = ["двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто"]
+    // let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    if (num <= 9) {
+        console.log(aDozen.at(num))
+    };
+    if (num > 9 && num <= 19) {
+        let ten = String(num);
+        console.log(firstTen.at(Number(ten.at(1))))
+    }
+    if (num === 20 || num === 30 || num === 40 || num == 50 || num === 60 || num === 70 || num === 80 || num === 90) {
+        let temp = String(num - 20);
+        console.log(theOthers.at(Number(temp.at(0))))
+    }
+    if ((num > 20 && num < 30 || num > 30 && num < 40 || num > 40 && num < 50 || num > 50 && num < 60 || num > 60 && num < 70 || num > 70 && num < 80 || num > 80 && num < 90 || num > 90 && num < 100)) {
+        let two = String(num - 20);
+        if (two <= 9) { console.log(theOthers.at(0) + aDozen.at((Number(two.at(0))))) }
+        else {
+            console.log(theOthers.at(Number(two.at(0))) + aDozen.at(Number(two.at(1))))
+        }
+    }
+
+
+} for (let num = 0; num < 100; num++) {
+    let res = numRegistration(num);
+
+}
+
