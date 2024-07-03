@@ -4,32 +4,22 @@
 body h1 {
     font-family: "Roboto", sans-serif;
 }
-<<<<<<< HEAD
+
 body{ background-color: #EEEEEE;
     height: 100%;}
-.fon {
-    display: flex;
-    
-    /* background-color: #EEEEEE; */
-    flex-direction: column;
-    
-=======
+
 
 .fon {
     display: flex;
     background-color: #EEEEEE;
     flex-direction: column;
     height: 100vh;
->>>>>>> cd41e9d9ef5776cb9942a5edcfe2669d4196be75
     gap: 40px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 300;
-<<<<<<< HEAD
     /* flex-wrap: wrap; */
-=======
-    flex-wrap: wrap;
->>>>>>> cd41e9d9ef5776cb9942a5edcfe2669d4196be75
+    /* flex-wrap: wrap; */
 
 }
 
@@ -48,19 +38,14 @@ body{ background-color: #EEEEEE;
 input {
     background-color: #EEEEEE;
     display: flex;
-<<<<<<< HEAD
 width: 50%;
     border: none;
 }
 
+
+
 .forms {
-=======
 
-    border: none;
-}
-
-.form {
->>>>>>> cd41e9d9ef5776cb9942a5edcfe2669d4196be75
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,24 +57,24 @@ width: 50%;
 
 }
 
-<<<<<<< HEAD
+
 input[type=search]::-webkit-search-cancel-button{display: none;}
 ::-webkit-search-results-decoration{display: none;}
 
 
 input[type=search]
  {
-   outline: none;
-=======
+   outline: none;}
+
 input[type=search] {
->>>>>>> cd41e9d9ef5776cb9942a5edcfe2669d4196be75
+
     padding: 15px;
     font-size: 24px;
 }
 
 .windOut {
     display: flex;
-<<<<<<< HEAD
+
     gap:10px;
     flex: 1;
     flex-direction: column;
@@ -139,9 +124,8 @@ border-width: 0px;
 .text{
 
 }
-p{
+/* p{
     font-weight:100;
-=======
     flex: 1;
     border: 2px solid #b32222;
     justify-content: center;
@@ -152,5 +136,5 @@ p{
 
     font-size: 56px;
 
->>>>>>> cd41e9d9ef5776cb9942a5edcfe2669d4196be75
-}
+
+} */
