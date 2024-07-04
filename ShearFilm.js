@@ -96,7 +96,7 @@ function rendering(film, temp) {
             resStr += arrStr[i] + ' ';
             if (i === 3) { break }
         }
-        let poster = '';
+
         let strPoster = film.Poster;
         if (strPoster === "N/A") {
             strPoster = "Нет изображения"
@@ -165,7 +165,8 @@ function error(err) {
 }
 // 'Guardians of the Galaxy'
 
-form.addEventListener('submit', function () {
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
     console.log(
         searchFilms(inp.value,
             (moviesImbdID) => getMovies(moviesImbdID, rendering, error), error))
