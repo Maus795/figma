@@ -81,7 +81,7 @@ function rendering(film, temp) {
 
     }
 
-
+    console.log(film)
     let dataInHtml = document.getElementById("workGrid");
     let html = "";
     for (let i = 0; i < film.length; i++) {
@@ -96,9 +96,17 @@ function rendering(film, temp) {
             resStr += arrStr[i] + ' ';
             if (i === 3) { break }
         }
+        let poster = '';
+        let strPoster = film.Poster;
+        if (strPoster === "N/A") {
+            strPoster = "Нет изображения"
+        } else {
+            strPoster =
+                `<img width="300" height="400" src="${film.Poster}"</ img>`
+        }
         return `<li class="item">
-        <img width="300" height="400" src="${film.Poster}"</img>
-        ${film.Title}<p class="plot">${resStr + '...'}</p></li>`
+        <p class="Poster">${strPoster}</p><p class="Title">${film.Title}</p>
+        <p class="Plot">${resStr + '...'}</p></li>`
     }
     // let resultArrFetures = [];
     // let arrFeatures = ['Title', 'Plot', 'Poster'];
